@@ -1,19 +1,17 @@
-<h3><b>Spannable vs fromHtml</b></h3>
-<br/>
+Spannable vs fromHtml
+====================
+
 There are different methods to format text inside Android TextView.<br/>
-<ol>
-<li>Simle HTML formatting</li>
-<li>SpannableBuilder</li>
-</ol>
+
+* [Simle HTML formatting](http://developer.android.com/intl/ru/reference/android/text/Html.html)
+* [SpannableBuilder](http://developer.android.com/intl/ru/reference/android/text/Spannable.html)
+
 
 Current test just makes <b>bold</b>, <i>italic</i>, green text and applies it to TextView.
-<br/>
-<br/>
+
 My Nexus 4 shows next results
-<br/>
-<ol>
-<li>HTML formatting - about 3000000 nsec</li>
-<li>SpannableBuilder - about 600000 nsec</li>
-</ol>
+
+* HTML formatting - about 3000000 nsec</li>
+* SpannableBuilder - about 600000 nsec</li>
 
 So use SpannableBuilder for text formatting instead of HTML tags where it possible :-)
